@@ -16,3 +16,7 @@ The project is started with the regular ionic commands.
 
 1. Run `npm install` to install all dependencies.
 2. Run `ionic serve` to start the development environment.
+
+## To get the unit test running
+
+1. Run `npm run test` for the unit test which will run the tests in a headless browser.
