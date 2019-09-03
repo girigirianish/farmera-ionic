@@ -5,7 +5,7 @@ card section which has information of the team and the next page is a plain page
 
 ## Getting Started
 
-To get the project up and running, walk through following steps:
+To get started, walk through any of following steps:
 
 - Clone the repo: `git clone https://github.com/girigirianish/farmera-ionic.git`
 - Fork the repo
