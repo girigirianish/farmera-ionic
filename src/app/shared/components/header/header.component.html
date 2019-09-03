@@ -1,0 +1,20 @@
+<ion-header class="header">
+  <div class="header__container">
+    <div *ngIf="group" class="header__info">
+      <div class="header__info--group">
+        <h2 class="header__info--main">{{group.pigs.total}} pigs</h2>
+        <small class="header__info--sub">{{group.pigs.age}}</small>
+      </div>
+      <div class="header__info--group text-right">
+        <small class="header__info--sub">Group: <b>{{group.groupId}}</b></small>
+        <small class="header__info--sub">Started: {{group.startedDate}}</small>
+      </div>
+    </div>
+    <div class="header__button-wrapper">
+      <button class="header__button header__button--outline" (click)="openManagePigsActionSheet()">Manage Pigs </button>
+      <button class="header__button" (click)="ridrectToLogBookPage()">
+        <ion-icon class="icon" name="paper"></ion-icon> LOGBOOK
+      </button>
+    </div>
+  </div>
+</ion-header>

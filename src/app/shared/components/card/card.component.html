@@ -1,0 +1,13 @@
+<ion-card class="collapsible-card">
+  <ion-card-content>
+    <ng-content> </ng-content>
+    <div class="collapsible-card-collapsible-section" *ngIf="!collapsed && collapsible">
+      <ng-content select="[collapsible]"> </ng-content>
+    </div>
+    <div *ngIf="collapsible" class="collapsible-card-cheveron-icon-container" (click)="toggle()">
+      <span class="collapsible-icon"></span>
+      <ion-icon name="arrow-dropdown" *ngIf="collapsed"></ion-icon>
+      <ion-icon name="arrow-dropup" *ngIf="!collapsed"></ion-icon>
+    </div>
+  </ion-card-content>
+</ion-card>
