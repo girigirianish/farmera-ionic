@@ -1,0 +1,46 @@
+<farmera-header [group]="group"></farmera-header>
+<ion-content>
+    <div class="section">
+        <ion-label class="section__label" position="stacked">{{teamCardTitle}}</ion-label>
+        <farmera-card [collapsible]="true" class="farmera-card">
+            <div *ngIf="team[0]" class="content-card">
+                <div class="card-data">
+                    <div *ngIf=" !team[0].userImageSafeStyle" class="card-data__user">
+                        <span class="f-icon icon-user"></span>
+                    </div>
+                    <div *ngIf="team[0].userImageSafeStyle" class="card-data__user"
+                        [style.background-image]="team[0].userImageSafeStyle">
+                    </div>
+                    <div class="card-data__detail">
+                        <h5 class="name">{{team[0].fullName}}</h5>
+                        <small class="text">{{team[0].lastCheckIn}}</small>
+                    </div>
+                    <div class="card-data__actions">
+                        <ion-icon class="card-btn" name="chatboxes"></ion-icon>
+                        <ion-icon class="card-btn" name="call"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div collapsible>
+                <div *ngFor="let user of team | slice:1">
+                    <div class="card-data">
+                        <div *ngIf="!user.userImageSafeStyle" class="card-data__user">
+                            <span class="f-icon icon-user"></span>
+                        </div>
+                        <div *ngIf="user.userImageSafeStyle" class="card-data__user"
+                            [style.background-image]="user.userImageSafeStyle">
+                        </div>
+                        <div class="card-data__detail">
+                            <h5 class="name">{{user.fullName}}</h5>
+                            <small class="text"> {{user.lastCheckIn}}</small>
+                        </div>
+                        <div class="card-data__actions">
+                            <ion-icon class="card-btn" name="chatboxes"></ion-icon>
+                            <ion-icon class="card-btn" name="call"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </farmera-card>
+    </div>
+</ion-content>

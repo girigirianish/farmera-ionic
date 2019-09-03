@@ -1,0 +1,14 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixin";
+
+.section {
+    @include container($large-screen);
+
+    &__label {
+        font-size: 12px;
+        text-transform: capitalize;
+        color: lighten($color: $primary-color, $amount: 20);
+        font-weight: 500;
+        margin: 10px;
+    }
+}
