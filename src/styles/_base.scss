@@ -1,0 +1,14 @@
+// reset css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: $primary-font;
+    font-size: $root-font-size;
+    letter-spacing: $app-letter-spacing;
+    color: $primary-color;
+}

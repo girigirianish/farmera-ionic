@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+// colors
+$primary-color: rgb(38, 50, 56);
+$light-color: rgba(0, 0, 0, 0.6);
+$app-white: #fefefe;
+$main-gray: lighten(#465461, 25%);
+
+
+
+$header-btn-background-color: #d0db59;
+$btn-color: $primary-color;
+
+$card-shadow: rgba(38, 50, 56, 0.1);
+
+$gradient-start-color: #4b626e;
+$gradient-end-color: #263238;
+
+// font
+$root-font-size: 16px;
+$primary-font: 'Roboto',
+sans-serif;
+$app-letter-spacing: 1px;
+
+// screen size
+$large-screen: 760px;
+$small-screen: 414px;
